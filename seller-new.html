@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>eBazaar-Seller</title>
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/f0ecd7bc22.js" crossorigin="anonymous"></script>
+  <!-- BootStrap -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"> -->
+  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+
+  <!-- </script> -->
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="seller-style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <p class="navbar-brand" href="#">eBazar<i class="fa-solid fa-carrot "></i> / Seller </p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+           <a class="nav-link " href="#"><i class="fa-solid fa-ellipsis-vertical  three-dots"></i></a>
+          <!-- <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-ellipsis-vertical  three-dots"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </div> -->
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <div class="main-box">
+    <div class="row">
+      <!-- <button class=" col-2 btn btn-outline-light add icon" data-bs-toggle="modal" data-bs-target="#addModal">
+          <i class="fa-solid fa-plus fa-2x"></i>
+          <p>add crop</p>
+        </button> -->
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-light icon" data-bs-toggle="modal" data-bs-target="#addModal">
+        <i class="fa-solid fa-plus fa-2x"></i>
+        <p>Add crop</p>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="addModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Crop</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3>Details</h3>
+              <!-- <label for="" class="form-label">Crop Name</label>
+              <div class="input-group crop-name">
+                <input type="text" class="form-control" placeholder="Enter Crop name" name="" value="">
+              </div><br>
+              <label for="" class="form-label">Crop Size(S/M/L)</label>
+              <div class="input-group crop-name">
+                <input type="text" class="form-control" placeholder="Enter Crop size" name="" value="">
+              </div><br>
+              <label for="" class="form-label">Type of Harvesting ( O/I )</label>
+              <div class="input-group crop-name">
+                <input type="text" class="form-control" placeholder="Enter Harvesting Type" name="" value="">
+              </div>
+              <br>
+              <label for="" class="form-label">Quantity</label>
+              <div class="input-group password">
+                <input type="text" class="form-control" placeholder="Enter Quantity" name="" value="">
+              </div>
+              <br>
+              <label for="" class="form-label">Price per Unit</label>
+              <div class="input-group password">
+                <input type="text" class="form-control" placeholder="Enter Cost(per Kg)" name="" value="">
+              </div>
+              <br>
+              <label for="" class="form-label">Upload Photo</label>
+              <input type="file" name="" value="" class="btn btn-outline-info btn-small" name="button" required></input> -->
+
+              <label for="" class="form-label">Crop Name:</label>
+              <div class="input-group crop-name">
+                <input type="text" class="form-control" placeholder="Enter Crop name" name="" value="" width = 100px>
+                <button type="button " class= "btn" name="button" id="play" onclick="cropplay()">  <i class="fa-solid fa-volume-high"></i></button>
+              </div><br> OR
+              <!-- Image search -->
+              <button class="btn btn-outline-info  veg-button" data-bs-target="#ImageModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Enter name using  Images</button>
+              <br><br>
+              <label for="">Crop size ( if appropriate):</label><br><br>
+              <input type="radio" class="btn-check" name="options-l" id="option1" autocomplete="off" >
+              <label class="btn btn-outline-info" for="option1">Small</label>
+
+              <input type="radio" class="btn-check" name="options-l" id="option2" autocomplete="off">
+              <label class="btn btn-outline-info" for="option2">Medium</label>
+
+              <input type="radio" class="btn-check" name="options-l" id="option3" autocomplete="off" >
+              <label class="btn btn-outline-info" for="option3">Large</label>
+
+              <br><br>
+              <label for="">Harvesting Type:</label><br><br>
+              <input type="radio" class="btn-check" name="options-o" id="option4" autocomplete="off" >
+              <label class="btn btn-outline-info" for="option4">Organic</label>
+
+              <input type="radio" class="btn-check" name="options-o" id="option5" autocomplete="off">
+              <label class="btn btn-outline-info" for="option5">Inorganic</label>
+
+              <br>
+              <label for="" class="form-label">Quantity</label>
+              <div class="input-group password">
+                <input type="text" class="form-control" placeholder="Enter Quantity" name="" value="">
+                <button type="button " class= "btn" name="button" id="play" onclick="quantityplay()">  <i class="fa-solid fa-volume-high"></i></button>
+              </div>
+              <br>
+              <label for="" class="form-label">Price per Unit</label>
+              <div class="input-group password">
+                <input type="text" class="form-control" placeholder="Enter Cost(per Kg)" name="" value="">
+                <button type="button " class= "btn" name="button" id="play" onclick="priceplay()">  <i class="fa-solid fa-volume-high"></i></button>
+              </div>
+              <br>
+              <label for="" class="form-label">Upload Photo</label>
+              <input type="file" name="" value="" class="btn btn-outline-info btn-small" name="button" required></input>
+              <button type="button " class= "btn" name="button" id="play" onclick="photoplay()">  <i class="fa-solid fa-volume-high"></i></button>
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info ">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <audio src="audio-files/enter crop name.mp3" id="crop-name-audio"></audio>
+      <script>
+          function cropplay() {
+              var audio = document.getElementById('crop-name-audio');
+              if (audio.paused) {
+                  audio.play();
+                  $('#play').removeClass('glyphicon-play-circle')
+                  $('#play').addClass('glyphicon-pause')
+              }else{
+                  audio.pause();
+                  audio.currentTime = 0
+                  $('#play').addClass('glyphicon-play-circle')
+                  $('#play').removeClass('glyphicon-pause')
+              }
+          }
+      </script>
+
+      <audio src="audio-files/enter picture.mp3" id="photo-audio"></audio>
+      <script>
+          function photoplay() {
+              var audio = document.getElementById('photo-audio');
+              if (audio.paused) {
+                  audio.play();
+                  $('#play').removeClass('glyphicon-play-circle')
+                  $('#play').addClass('glyphicon-pause')
+              }else{
+                  audio.pause();
+                  audio.currentTime = 0
+                  $('#play').addClass('glyphicon-play-circle')
+                  $('#play').removeClass('glyphicon-pause')
+              }
+          }
+      </script>
+
+      <audio src="audio-files/enter cost.mp3" id="price-audio"></audio>
+      <script>
+          function priceplay() {
+              var audio = document.getElementById('price-audio');
+              if (audio.paused) {
+                  audio.play();
+                  $('#play').removeClass('glyphicon-play-circle')
+                  $('#play').addClass('glyphicon-pause')
+              }else{
+                  audio.pause();
+                  audio.currentTime = 0
+                  $('#play').addClass('glyphicon-play-circle')
+                  $('#play').removeClass('glyphicon-pause')
+              }
+          }
+      </script>
+
+      <audio src="audio-files/enter quantity.mp3" id="quantity-audio"></audio>
+      <script>
+          function quantityplay() {
+              var audio = document.getElementById('quantity-audio');
+              if (audio.paused) {
+                  audio.play();
+                  $('#play').removeClass('glyphicon-play-circle')
+                  $('#play').addClass('glyphicon-pause')
+              }else{
+                  audio.pause();
+                  audio.currentTime = 0
+                  $('#play').addClass('glyphicon-play-circle')
+                  $('#play').removeClass('glyphicon-pause')
+              }
+          }
+      </script>
+      <!-- IMAGE  MODAL -->
+      <div class="modal fade" id="ImageModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel">Click on Images to see sellers</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body image-box">
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#carrotModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/carrot.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#onionModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/onion.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#tomatoModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/tomato.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#potatoModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/potato.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#chiliModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/chili.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#eggplantModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/eggplant.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#capsicumModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/bell-pepper.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#riceModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/rice.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#wheatModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/wheat.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/apple.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/banana.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/grapes.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/rose.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/jasmine.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/sunflower.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/barley.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/cabbage.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/corn.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/kale.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/beet.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/pumpkin.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/orange.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/strawberry.png" alt="" width=60px height=60px></button>
+                          </div>
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/broccoli.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-4">
+                              <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/watermelon.png" alt="" width=60px height=60px></button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- <button class=" col-2 btn btn-outline-light add icon">
+        <i class="fa-solid fa-pen fa-2x "></i>
+        <p>edit crop</p>
+      </button> -->
+      <button type="button" class="btn btn-light icon" data-bs-toggle="modal" data-bs-target="#editModal">
+        <i class="fa-solid fa-pen fa-2x "></i>
+        <p>Update crop</p>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Update Crop</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Tomato <img src = "images/tomato.png" width = 40px height = 40px/></div>
+                    <input type="number" class="form-control" name="" value="enter quantity" placeholder="50kgs">
+                    <input type="number" class="form-control" name="" value="enter price" placeholder="30/-">
+
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">50kgs</span> -->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Potato <img src = "images/potato.png" width = 40px height = 40px/></div>
+                    <input type="number" class="form-control" name="" value="enter quantity" placeholder="40kgs">
+                    <input type="number" class="form-control" name="" value="enter price" placeholder="20/-">
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">40kgs</span> -->
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Wheat <img src = "images/wheat.png" width = 40px height = 40px/></div>
+                    <input type="number" class="form-control" name="" value="enter quantity" placeholder="50kgs">
+                    <input type="number" class="form-control" name="" value="enter price" placeholder="35/-">
+                  </div>
+                  <!-- <span class="badge bg-primary rounded-pill">50kgs</span> -->
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <!-- <div class="col-2 btn btn-outline-light add icon">
+        <a href="add.html"><i class="fa-solid fa-trash-can fa-2x"></i></a>
+
+        <p>delete crop</p>
+      </div> -->
+      <button type="button" class="btn btn-light icon" data-bs-toggle="modal" data-bs-target="#deleteModal">
+        <i class="fa-solid fa-trash-can fa-2x"></i>
+        <p>Delete crop</p>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete Crop</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Tomato <img src = "images/tomato.png" width = 40px height = 40px/></div>
+                    30/- per Kg
+                  </div>
+                  <button class="btn btn-info badge"><i class="fa-solid fa-trash-can fa-2x"></i></button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Potato <img src = "images/potato.png" width = 40px height = 40px/></div>
+                    20/- per Kg
+                  </div>
+                  <button class="btn btn-info badge"><i class="fa-solid fa-trash-can fa-2x"></i></button>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Wheat <img src = "images/wheat.png" width = 40px height = 40px/></div>
+                    35/- per kg
+                  </div>
+                  <button class="btn btn-info badge"><i class="fa-solid fa-trash-can fa-2x"></i></button>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="col-2 btn btn-outline-light add icon">
+        <i class="fa-solid fa-list fa-2x"></i>
+        <p>check list</p>
+      </div> -->
+      <button type="button" class="btn btn-light icon" data-bs-toggle="modal" data-bs-target="#listModal">
+        <i class="fa-solid fa-list fa-2x"></i>
+        <p>Check list</p>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="listModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">List Of Added Items</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Tomato <img src = "images/tomato.png" width = 40px height = 40px/></div>
+                    50 kgs
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Potato <img src = "images/potato.png" width = 40px height = 40px/></div>
+                    40 kgs
+                  </div>
+                  <span class="badge bg-primary rounded-pill">20/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold">Wheat <img src = "images/wheat.png" width = 40px height = 40px/></div>
+                    50 kgs
+                  </div>
+                  <span class="badge bg-primary rounded-pill"> 35/- per kg
+                  </span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-outline-info">Save changes</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <button type="button" class="btn btn-info home-button" name="button">Home</button> -->
+    <br><br><br>
+      <a href = "welcome.html" ><button type="button" class="btn btn-outline-info home-b" name="button">Home <i class="fa-solid fa-house"></i></button></a>
+      <a href = "index.html" ><button type="button" class="btn btn-outline-info logout-b" name="button">Logout <i class="fa-solid fa-right-from-bracket"></i></button></a>
+  </div>
+
+
+
+  <!-- Modal -->
+
+
+
+
+</body>
+
+</html>

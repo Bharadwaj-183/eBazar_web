@@ -1,0 +1,91 @@
+body{
+  font-family: Montserrat, sans-serif;
+  /* text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center; */
+  background-image: linear-gradient(to right ,#02aab0 , #00cdac);
+  /* background-image: url('backgroundveg.webp'); */
+
+}
+h1{
+  color : white;
+  /* font-size: "Montserrat-Black"; */
+  font-weight :900;
+  font-family: "Montserrat" , sans-serif;
+
+}
+/* .user-name{
+  padding-top: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5px;
+}
+
+.password{
+  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+} */
+
+/* .login-box{
+   margin:  auto ;
+   margin-top: 5%;
+  text-align: left;
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  padding: 3% 3%;
+
+} */
+.inner-body{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+label{
+  margin-top: 1%;
+}
+
+button{
+ margin : 2% 2%;
+}
+/* .num{
+  width : 10%;
+} */
+body{
+  font-weight:500;
+
+}
+.Buyer-Seller{
+  text-align: center;
+  align-items : center;
+  align-content: center;
+  margin-left: 20%;
+}
+.Seller{
+  margin : auto;
+
+}
+.Buyer{
+  margin-left: 0;
+}
+.card{
+  width : 300px;
+  margin-left: 40%;;
+}
+.col{
+  margin : 0;
+}
+h2{
+  font-weight: 600;
+}
+
+.card-header{
+  color : #00cdac;
+}
+.fa-6x{
+  color : #EEF2E6;
+}

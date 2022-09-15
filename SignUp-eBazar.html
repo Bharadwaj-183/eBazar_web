@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>eBazaar-Login</title>
+
+  <!-- Font Awesome -->
+
+<script src="https://kit.fontawesome.com/f0ecd7bc22.js" crossorigin="anonymous"></script>
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="signup-styles.css">
+</head>
+
+<body >
+  <h1><strong>Welcome To <br >eBazar  </strong><i class="fa-solid fa-carrot"></i></h1>
+  <div class="login-box">
+    <h3>SignUp</h3>
+    <label for="" class= "form-label">FirstName</label>
+    <div class="input-group user-name">
+      <input type="text" class="form-control" placeholder="Enter Firstname" name="" value="">
+      <button type="button " class= "btn" name="button" id="play" onclick="firstnameplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+    <label for="" class= "form-label">Lastname</label>
+    <div class="input-group user-name">
+      <input type="text" class="form-control" placeholder="Enter Lastname" name="" value="">
+      <button type="button " class= "btn" name="button" id="play" onclick="lastnameplay()">  <i class="fa-solid fa-volume-high"></i></button>
+
+    </div>
+    <br>
+    <label for="" class= "form-label">Password</label>
+    <div class="input-group password">
+      <input type="password" class="form-control" placeholder="Enter Password" name="" value="">
+      <button type="button " class= "btn" name="button" id="play" onclick="createpasswordplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+    <br>
+    <label for="" class= "form-label">Confirm Password</label>
+    <div class="input-group user-name">
+      <input type="password" class="form-control" placeholder="Re-Enter password" name="" value="">
+      <button type="button " class= "btn" name="button" id="play" onclick="passwordplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+
+    <br>
+    <label for="" class= "form-label">Address</label>
+    <div class="input-group user-name">
+      <textarea type="text" class="form-control" placeholder="Enter your address" name="" value=""> </textarea>
+      <button type="button " class= "btn" name="button" id="play" onclick="addressplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+
+    <br>
+
+    <label for="" class= "form-label ">Mobile Number</label>
+    <div class="input-group user-name">
+      <input type="tel" class="form-control" pattern="[0-9]{10}" placeholder="Enter Your MobileNum" name="" value="" width = "10">
+      <button type="button " class= "btn" name="button" id="play" onclick="numberplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+
+    <button type="button" class = "btn btn-outline-info" name="button">Send OTP</button>
+
+    <div class="input-group user-name">
+      <input type="password num" class="form-control" placeholder="Enter OTP" name="" value="" width ="10">
+      <button type="button " class= "btn" name="button" id="play" onclick="otpplay()">  <i class="fa-solid fa-volume-high"></i></button>
+    </div>
+    <button type="button" class = "btn btn-outline-info" name="button">Resend OTP</button>
+
+    <br>
+    <a href="welcome.html"><button type="button" class = "btn btn-outline-info" name="button">SignUp</button></a>
+
+
+  </div>
+
+  <audio src="audio-files/enter firstname.mp3" id="first-name-audio"></audio>
+  <script>
+      function firstnameplay() {
+          var audio = document.getElementById('first-name-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+  </script>
+
+  <audio src="audio-files/enter last name.mp3" id="last-name-audio"></audio>
+  <script>
+      function lastnameplay() {
+          var audio = document.getElementById('last-name-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+  </script>
+
+
+  <audio src="audio-files/create password.mp3" id="create-password-audio"></audio>
+  <script>
+      function createpasswordplay() {
+          var audio = document.getElementById('create-password-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+  </script>
+
+  <audio src="audio-files/create password.mp3" id="create-password-audio"></audio>
+  <script>
+      function createpasswordplay() {
+          var audio = document.getElementById('create-password-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+  </script>
+
+  <audio src="audio-files/enter address.mp3" id="address-audio"></audio>
+  <script>
+      function addressplay() {
+          var audio = document.getElementById('address-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+  </script>
+
+  <audio src="audio-files/enter number.mp3" id="number-audio"></audio>
+  <script>
+      function numberplay() {
+          var audio = document.getElementById('number-audio');
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+
+
+  </script>
+  <audio src="audio-files/enter otp.mp3" id="otp-audio"></audio>
+  <script>
+      function otpplay() {
+          var audio = document.getElementById("otp-audio");
+          if (audio.paused) {
+              audio.play();
+              $('#play').removeClass('glyphicon-play-circle')
+              $('#play').addClass('glyphicon-pause')
+          }else{
+              audio.pause();
+              audio.currentTime = 0
+              $('#play').addClass('glyphicon-play-circle')
+              $('#play').removeClass('glyphicon-pause')
+          }
+      }
+      </script>
+</body>
+
+</html>

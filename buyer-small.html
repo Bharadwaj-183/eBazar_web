@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>eBazaar-Buyer</title>
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/f0ecd7bc22.js" crossorigin="anonymous"></script>
+  <!-- BootStrap -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"> -->
+  <!-- Latest compiled and minified CSS -->
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
+
+  <!-- </script> -->
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="buyer-style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark ">
+    <p class="navbar-brand" href="#">eBazar<i class="fa-solid fa-carrot "></i> / Buyer </p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link " href="#"><i class="fa-solid fa-ellipsis-vertical  three-dots"></i></a>
+          <!-- <div class="dropdown-center">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-ellipsis-vertical  three-dots"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Action two</a></li>
+              <li><a class="dropdown-item" href="#">Action three</a></li>
+            </ul>
+          </div> -->
+        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Download</a>
+            </li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- <marquee>
+    Alert : Tomato price has been increasing 3/- per day.<br>
+    Hurry! Mango season is going to be end.
+  </marquee> -->
+
+  <div class="main-box">
+    <div class="input-group">
+      <div class="form-outline">
+        <input id="search-input" type="search" id="form1" class="form-control" placeholder="Search" />
+        <!-- <label class="form-label" for="form1"></label> -->
+      </div>
+      <button id="search-button" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#searchModal">
+        <i class="fas fa-search"></i>
+      </button>
+      <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">32/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">29/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <button type="button" class="btn btn-outline-light crop" data-bs-toggle="modal" data-bs-target="#vegModal">
+        <li class="list-group-item list-group-item-info">Vegetables</li>
+      </button> -->
+
+      <!-- IMAGE BUTTON -->
+      <!-- <button type="button" class= "btn btn-info" name="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+        Search with images
+      </button>-->
+
+      <!-- IMAGE MODAL -->
+      <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body image-box">
+                <div class="row">
+                  <div class="col-4">
+                    <button type="button" class= "btn btn-light" name="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+
+                    </button>
+                  </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- Image search -->
+      <!-- <button class="btn btn-outline-info  veg-button" data-bs-target="#ImageModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Search with Images</button> -->
+
+      <!-- IMAGES  MODAL -->
+      <div class="modal fade" id="ImageModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalToggleLabel">Click on Images to see sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body image-box">
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#carrotModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/carrot.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#onionModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/onion.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#tomatoModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/tomato.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#potatoModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/potato.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#chiliModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/chili.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#eggplantModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/eggplant.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#capsicumModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/bell-pepper.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#riceModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/rice.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#wheatModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/wheat.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/apple.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/banana.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/grapes.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/rose.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/jasmine.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/sunflower.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/barley.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/cabbage.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/corn.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/kale.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/beet.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/pumpkin.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/orange.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#bananaModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/strawberry.png" alt="" width=60px height=60px></button>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#grapesModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/broccoli.png" alt="" width=60px height=60px></button>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-4">
+                  <button class="btn btn-light veg-button" data-bs-target="#appleModal" data-bs-toggle="modal" data-bs-dismiss="modal"><img src="images/watermelon.png" alt="" width=60px height=60px></button>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal fade" id="appleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Apple</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Apple</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Apple</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="bananaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Banana</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Banana</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Banana</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="grapesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Grapes</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Grapes</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Grapes</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="carrotModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Carrot</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Carrot</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Carrot</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="onionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Onion</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Onion</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Onion</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="eggplantModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Brinjal(Vankaya)</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Brinjal(Vankaya)</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Brinjal(Vankaya)</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="potatoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Potato</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Potato</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Potato</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="chiliModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Chilli</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Chilli</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Chilli</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="capsicumModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Capsicum</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Capsicum</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Capsicum</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="tomatoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Tomato</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="riceModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Rice</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">36/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Rice</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">38/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Rice</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">41/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="wheatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Wheat</b></div>
+                    <b>Rama Rao</b><br />
+                    <b>Quantity:</b>50kgs<br />
+                    <b>Ph :</b> 9154602093 <br>
+                    <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">70/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Wheat</b></div>
+                    <b>Subbaiah</b><br />
+                    <b>Quantity:</b>30kgs<br />
+                    <b>Ph :</b> 7981117200 <br>
+                    <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">60/- per Kg</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start">
+                  <div class="ms-2 me-auto">
+                    <div><b>Wheat</b></div>
+                    <b> Ramesh</b>-50kgs<br />
+                    <b>Quantity:</b>70kgs<br />
+                    <b>Ph :</b> 9849930678 <br>
+                    <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                    <b>Rating:</b> 4.5/5
+                  </div>
+                  <span class="badge bg-primary rounded-pill">65/- per Kg</span>
+                </li>
+              </ol>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#ImageModalToggle">Close</button>
+              <button type="button" class="btn btn-outline-info">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br><br>
+      <div class="row">
+        <div class="col-6">
+          <h2>Categories </h2>
+        </div>
+        <div class="col-6">
+
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-outline-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Size
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Small</a></li>
+            <li><a class="dropdown-item" href="#">Medium</a></li>
+            <li><a class="dropdown-item" href="#">Large</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <ul class="list-group ">
+
+
+        <!-- ITEM 1 -->
+        <button type="button" class="btn btn-outline-light crop" data-bs-toggle="modal" data-bs-target="#vegModal">
+          <li class="list-group-item list-group-item-info">Vegetables</li>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal modal-fullscreen fade" id="vegModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Available Sellers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+
+                  <div class="col-6">
+                    <h2>Organic</h2>
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Tomato <img src="images/tomato.png" width=40px height=40px /></b></div>
+                          <b>Rama Rao</b><br />
+                          <b>Quantity:</b>50kgs<br />
+                          <b>Ph :</b> 9154602093 <br>
+                          <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Carrot <img src="images/carrot.png" width=40px height=40px /></b></div>
+                          <b>Subbaiah</b><br />
+                          <b>Quantity:</b>30kgs<br />
+                          <b>Ph :</b> 7981117200 <br>
+                          <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Onion <img src="images/onion.png" width=40px height=40px /></b></div>
+                          <b> Ramesh</b>-50kgs<br />
+                          <b>Quantity:</b>70kgs<br />
+                          <b>Ph :</b> 9849930678 <br>
+                          <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="col-6">
+                    <h2>Inorganic</h2>
+                    <ol class="list-group list-group-numbered">
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Tomato <img src="images/tomato.png" width=40px height=40px /></b></div>
+                          <b>Rama Rao</b><br />
+                          <b>Quantity:</b>50kgs<br />
+                          <b>Ph :</b> 9154602093 <br>
+                          <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Carrot <img src="images/carrot.png" width=40px height=40px /></b></div>
+                          <b>Subbaiah</b><br />
+                          <b>Quantity:</b>30kgs<br />
+                          <b>Ph :</b> 7981117200 <br>
+                          <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                          <div><b>Onion <img src="images/onion.png" width=40px height=40px /></b></div>
+                          <b> Ramesh</b>-50kgs<br />
+                          <b>Quantity:</b>70kgs<br />
+                          <b>Ph :</b> 9849930678 <br>
+                          <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                          <b>Rating:</b> 4.5/5
+                        </div>
+                        <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-info">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- ITEM 2 -->
+        <button type="button" class="btn btn-outline-light crop" data-bs-toggle="modal" data-bs-target="#grainModal">
+          <li class="list-group-item list-group-item-info">Grains</li>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="grainModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">List Of Added Items</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Rice <img src="images/rice.png" width=40px height=40px /></b></div>
+                      <b>Rama Rao</b><br />
+                      <b>Quantity:</b>50kgs<br />
+                      <b>Ph :</b> 9154602093 <br>
+                      <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Wheat <img src="images/wheat.png" width=40px height=40px /></b></div>
+                      <b>Subbaiah</b><br />
+                      <b>Quantity:</b>30kgs<br />
+                      <b>Ph :</b> 7981117200 <br>
+                      <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Barley <img src="images/barley.png" width=40px height=40px /></b></div>
+                      <b> Ramesh</b>-50kgs<br />
+                      <b>Quantity:</b>70kgs<br />
+                      <b>Ph :</b> 9849930678 <br>
+                      <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-info">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <button type="button" class="btn btn-outline-light crop" data-bs-toggle="modal" data-bs-target="#fruitModal">
+          <li class="list-group-item list-group-item-info">Fruits</li>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="fruitModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">List Of Added Items</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Banana <img src="images/banana.png" width=40px height=40px /> </b></div>
+                      <b>Rama Rao</b><br />
+                      <b>Quantity:</b>50kgs<br />
+                      <b>Ph :</b> 9154602093 <br>
+                      <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Apple <img src="images/apple.png" width=40px height=40px /></b></div>
+                      <b>Subbaiah</b><br />
+                      <b>Quantity:</b>30kgs<br />
+                      <b>Ph :</b> 7981117200 <br>
+                      <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Grape <img src="images/grapes.png" width=40px height=40px /></b></div>
+                      <b> Ramesh</b>-50kgs<br />
+                      <b>Quantity:</b>70kgs<br />
+                      <b>Ph :</b> 9849930678 <br>
+                      <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-info">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- ITEM 4 -->
+        <button type="button" class="btn btn-outline-light crop" data-bs-toggle="modal" data-bs-target="#flowerModal">
+          <li class="list-group-item list-group-item-info">Flowers</li>
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="flowerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Available Sellers </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ol class="list-group list-group-numbered">
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Rose <img src="images/rose.png" width=40px height=40px /></b></div>
+                      <b>Rama Rao</b><br />
+                      <b>Quantity:</b>50kgs<br />
+                      <b>Ph :</b> 9154602093 <br>
+                      <b>Address:</b>19-3-6A , Veeranki ,Vuyyuru.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Sunflower <img src="images/sunflower.png" width=40px height=40px /></b></div>
+                      <b>Subbaiah</b><br />
+                      <b>Quantity:</b>30kgs<br />
+                      <b>Ph :</b> 7981117200 <br>
+                      <b>Address:</b>67-5-44A , SatyaNagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <div class="ms-2 me-auto">
+                      <div><b>Jasmine <img src="images/jasmine.png" width=40px height=40px /></b></div>
+                      <b> Ramesh</b>-50kgs<br />
+                      <b>Quantity:</b>70kgs<br />
+                      <b>Ph :</b> 9849930678 <br>
+                      <b>Address:</b>25-6-24 , Sriram nagar ,Gudivada.<br>
+                      <b>Rating:</b> 4.5/5
+                    </div>
+                    <span class="badge bg-primary rounded-pill">30/- per Kg</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-info">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+      <br>
+      <br><br><br><br>
+      <a href="welcome.html"><button type="button" class="btn  btn-outline-info home-b" name="button">Home <i class="fa-solid fa-house"></i></button></a>
+      <a href="index.html"><button type="button" class="btn  btn-outline-info logout-b" name="button">Logout <i class="fa-solid fa-right-from-bracket"></i></button></a>
+    </div>
+
+
+
+    <!-- Modal -->
+
+
+
+
+</body>
+
+</html>

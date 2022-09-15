@@ -1,0 +1,43 @@
+body{
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+h1 {
+  margin: 0;
+  color : white;
+  color : white;
+  font-size: "Montserrat-Black";
+  font-weight :bolder;
+}
+h3{
+  margin: 0;
+  color : white;
+  color : white;
+  font-size: "Montserrat-Black";
+  font-weight :bolder;
+}
+.box {
+  height: 660px;
+  width:1366px;
+  overflow: hidden;
+
+background-image: url('backgroundveg-transformed.jpeg');
+/* background: #F9F9F9; */
+}
+.hid-box {
+  top: 100%;
+  position: relative;
+  transition: all .4s ease-out;
+  margin-top: 20%;
+
+  text-align: center;
+  height: 100%;
+}
+
+.box:hover > .hid-box{
+  top: 0;
+}

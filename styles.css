@@ -1,0 +1,47 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(to right ,#02aab0 , #00cdac);
+  /* background-image: url('backgroundveg.webp'); */
+  margin-top: 7%;
+}
+h1{
+  color : white;
+  font-size: "Montserrat-Black";
+  font-weight :bolder;
+}
+/* .user-name{
+  padding-top: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5px;
+}
+
+.password{
+  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+} */
+
+.login-box{
+   margin:  auto ;
+   margin-top: 5%;
+  text-align: left;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  padding: 3% 3%;
+
+}
+
+.user-name {
+  margin-right: 10px;
+}
+
+#play{
+  color: #00cdac;
+}

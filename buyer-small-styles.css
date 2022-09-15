@@ -1,0 +1,149 @@
+body{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(to right ,#02aab0 , #00cdac);
+  /* background-image: url('backgroundveg.webp'); */
+
+}
+h1{
+  color : white;
+  /* font-size: "Montserrat-Black"; */
+  font-weight :900;
+  font-family: "Montserrat" , sans-serif;
+
+}
+
+.main-box{
+
+  margin:  auto ;
+  margin-top: 5%;
+  text-align: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: #F9F9F9;
+  padding: 3% 3%;
+}
+
+/* .icon{
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin:  auto ;
+  margin-top: 5%;
+  color: #F9F9F9;
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  background-color: #00cdac;
+  padding: 10% 10%;
+}
+
+.button-icon{
+  width: 150px;
+  height: 150px;
+} */
+
+a{
+  color : #F9F9F9;
+}
+
+/* navbar */
+
+.navbar{
+  margin-top: 0;
+  padding-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.navbar-brand{
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+.nav-link{
+  padding: 0% 10%;
+}
+
+.three-dots{
+  color : white;
+}
+
+.home-button{
+  /* margin : auto */
+  /* margin : 10% 10%; */
+  margin-left: 37%;
+  margin-top: 30%;
+  color : white;
+}
+
+.btn-info{
+  color : white;
+}
+
+.btn-outine-info{
+  padding : 0;
+}
+/* .btn{
+  padding : 0
+} */
+.crop{
+  width  :300px;
+}
+
+.modal{
+  text-align: left;
+}
+
+
+/* image section */
+.image-box{
+  margin:  auto ;
+  margin-top: 5%;
+ text-align: left;
+ width: 400px;
+ height: 900px;
+ border-radius: 20px;
+ background-color: #F9F9F9;
+ padding: 3% 3%;
+}
+
+.veg-button{
+  margin : 10% 10%;
+}
+
+/* .searchwith{
+  border-radius: 2px;
+} */
+
+.home-b{
+  margin-left: 60px;
+  margin-right: 15px;
+  margin-top: 30px;
+
+}
+.logout-b{
+  margin-top:30px;
+}
+marquee{
+  color : white;
+}
+
+#search-button{
+  width : 40px;
+  height : 38px;
+}
+/* .modal{
+  width  :1000px;
+} */
+
+
+.dropdown{
+  margin-left : 40%;
+
+}
